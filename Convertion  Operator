@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Convertion_Operator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("**************");
+            List<int> Studant = new List<int>() { 1, 2, 3 };
+            IQueryable<int> num = Studant.AsQueryable();
+            ArrayList num2 = new Array
+            IEnumerable<int> num3 = num2.Cast<int>();
+
+            int[] vk = new int[] { 1, 2, 4, 5 };
+            Dictionary<int, int>
+
+
+
+
+
+
+            Console.ReadLine();
+
+        }
+    }
+}
