@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aggregation_Operator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> num = new List<int>() { 2, 78, 5, 98, 3, 1 };
+
+
+            //int a = num.count();
+            //console.writeline($"total no : {a}");
+
+            //int a1 = num.min();
+            //console.writeline($"min valuse : {a1}");
+
+            //int a2 = num.max();
+            //console.writeline($"max valuse : {a2}");
+
+            //var a3 = num.longcount();
+            //console.writeline($"long count valuse: {a3} ");
+
+            //int a4 = num.sum();
+            //console.writeline($"sum valuse : {a4}");
+
+            //int a5 = num.aggregate((i, j) => i + j);
+            //console.writeline($"aggregate : {a5}");
+
+            //var a6 = num.average();
+            //console.writeline($"average : {a6}");
+
+            // Quantifiers Operator-------
+            var a7 = num.Contains(78);
+            Console.WriteLine($"elelment : {a7}");
+            var a8 = num.Contains(111);
+            Console.WriteLine($"element : {a8}");
+
+            var a9 = num.All(i => i > 0);
+            Console.WriteLine($"all condition : {a9}");
+            var b = num.All(i=> i > 1);
+            Console.WriteLine($"all condition : {b}");
+
+            var c = num.Any(i => i > 5);
+            Console.WriteLine($"element : {c}");
+            var  d = num.Any(i => i > 98);
+            Console.WriteLine($"element 2 : {d}");
+
+            Console.ReadLine();
+        }
+    }
+}
