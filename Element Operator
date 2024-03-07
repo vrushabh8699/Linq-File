@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Element
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //ElementAt operator------
+            List<int> number = new List<int>() { 1, 2, 3, 4, 5, 6, 7, };
+            
+            int a = number.ElementAt(2);
+            Console.WriteLine($"ElementAt : {a}");
+            int b = number.ElementAt(0);
+            Console.WriteLine($"element : {b}");
+            //int c = number.ElementAt(7); // out of range Exception ---------
+            //Console.WriteLine($"elememnt : {c}");
+            int a1 = number.ElementAtOrDefault(9);
+            Console.WriteLine($"ElementAtOrDefault : {a1}");
+
+            // First OPerator--------
+            int a2 = number.First();
+            Console.WriteLine(  $"first element : {a2}");
+            //int a3=number.First(i=>i>60);
+            //Console.WriteLine($"first element : {a3}");
+            int a3 = number.FirstOrDefault(i=> i>4);
+            Console.WriteLine($"first Or Default element:{a3}");
+
+            // Last OPerator ------------
+            int d = number.Last();
+            Console.WriteLine($"Last element : {d}");
+
+            int d1 = number.LastOrDefault(i => i > 50);
+            Console.WriteLine($"Last :{d1}");
+            // Single OPerator-----------
+            int e = number.Single(i=> i > 6);
+            Console.WriteLine($"single opeartor : {e}");
+
+            int e1 = number.SingleOrDefault(i=>i>50);
+            Console.WriteLine($"singlre : {e1}");
+            Console.ReadLine();
+
+        }
+    }
+}
